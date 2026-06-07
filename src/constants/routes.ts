@@ -1,0 +1,21 @@
+export const ROUTES = {
+  HOME: '/',
+  DOCTORS: '/doctors',
+  DOCTOR_PROFILE: '/doctors/:id',
+  BOOK_APPOINTMENT: '/doctors/:id/book',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
+  RESET_PASSWORD: '/reset-password',
+  UNAUTHORIZED: '/unauthorized',
+  DASHBOARD: {
+    PATIENT: '/dashboard/patient',
+    PATIENT_APPOINTMENTS: '/dashboard/patient/appointments',
+    PATIENT_APPOINTMENT: '/dashboard/patient/appointments/:id',
+    PATIENT_PAYMENTS: '/dashboard/patient/payments',
+    DOCTOR: '/dashboard/doctor',
+    ASSISTANT: '/dashboard/assistant',
+    ADMIN: '/dashboard/admin',
+    SUPER_ADMIN: '/dashboard/super-admin',
+  },
+} as const
